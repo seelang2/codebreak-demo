@@ -1,0 +1,91 @@
+<!DOCTYPE html />
+<html>
+<head>
+	<meta charset="UTF-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<link 
+		rel="stylesheet" 
+		type="text/css" 
+		href="lib/jquery.mobile-1.4.3.min.css" />
+	
+	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	<script 
+		type="text/javascript" 
+		src="lib/jquery.mobile-1.4.3.min.js"></script>
+
+	<script type="text/javascript" src="codebreak.app.js"></script>
+
+	<style type="text/css">
+
+	#codedisplay {
+		font-size: 200%;
+		text-align: center;
+		letter-spacing: 2px;
+	}
+
+	#results {
+		text-align: center;
+	}
+
+	#resultdisplay {
+		/*float: left;
+		width: 25%; */
+		font-size: 150%;
+		color: #900;
+		text-align: right;
+	}
+	</style>
+	
+</head>
+<body>
+
+<!-- HOME -->
+<div id="game" data-role="page">
+
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<h1>CodeBreak</h1>
+	</div><!-- header -->
+
+	<div role="main" class="ui-content" data-theme="b">
+		<div id="display">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">&nbsp;</div>
+				<div class="ui-block-b" id="codedisplay"></div>
+				<div class="ui-block-c" id="resultdisplay"></div>
+			</div>
+		</div>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="7" /></div>
+			<div class="ui-block-b"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="8" /></div>
+			<div class="ui-block-c"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="9" /></div>
+		</div>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="4" /></div>
+			<div class="ui-block-b"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="5" /></div>
+			<div class="ui-block-c"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="6" /></div>
+		</div>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="1" /></div>
+			<div class="ui-block-b"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="2" /></div>
+			<div class="ui-block-c"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="3" /></div>
+		</div>
+		<div class="ui-grid-b">
+			<div class="ui-block-a"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="CLR" /></div>
+			<div class="ui-block-b"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="0" /></div>
+			<div class="ui-block-c"><input type="button" class="ui-btn ui-shadow ui-corner-all keypad" value="ENT" /></div>
+		</div>
+
+	</div><!-- main -->
+	
+	<div data-role="footer" data-position="fixed" data-theme="b">
+		<h2>Turns: 0</h2>
+	</div><!-- footer -->
+	
+</div><!-- page -->
+		
+<div data-role="popup" id="results" class="ui-content"></div>
+
+</body>
+<html>
